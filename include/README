@@ -1,4 +1,5 @@
 changed the bootlogo
 
-if you like the dog picture more, just change the name in  <Initiate the TFT display>
+if you like the dog picture more, just change the
+include file to bitmap.h and the name in <Initiate the TFT display > - section
 from powerLogger_bmp to shiba...
