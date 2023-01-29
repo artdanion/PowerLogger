@@ -207,13 +207,15 @@ void setup()
   tft.setRotation(3);
   tft.fillScreen(background_color);
 
-  for (int y = 0; y < 128; y++)
-  {
-    for (int x = 0; x < 160; x++)
-    {
-      tft.drawPixel(x, y, powerLogger_bmp[(y * 160) + x]);
-    }
-  }
+  // for (int y = 0; y < 128; y++)
+  // {
+  //   for (int x = 0; x < 160; x++)
+  //   {
+  //     tft.drawPixel(x, y, bitmap[(y * 160) + x]);
+  //   }
+  // }
+  
+  tft.drawRGBBitmap(0,0,powerLogger_bmp,160,128);
   // ----- Initiate the TFT display ----- //
 
   delay(2000);
